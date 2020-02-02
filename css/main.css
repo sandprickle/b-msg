@@ -1,0 +1,50 @@
+.contact-list ul {
+  padding: 0;
+  margin: 0;
+}
+.contact-list li {
+  display: flex;
+  list-style: none;
+  padding: .5em;
+  border-bottom: 1px solid #222;
+}
+.contact-photo {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #eee;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "c c c m m m m m m m m m"
+    "f f f f f f f f f f f f";
+  margin:  0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.header  {
+  grid-area: h;
+  background-color: lightcoral;
+}
+.footer {
+  grid-area: f;
+  background-color: lightcoral;
+}
+.conversation-summary h3 {
+  margin: 0;
+  padding: 5px;
+}
+.timestamp {
+  font-size: .75em;
+  margin: 0;
+  padding: 5px;
+}
+.contact-list {
+  grid-area: c;
+  background-color: lightskyblue;
+}
